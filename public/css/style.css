@@ -29,7 +29,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 } 
+.f-info-socials a {
+    color: inherit;
+    text-decoration: none;
+  }
 
 .f-info-socials i{
     font-size: 1.2rem;
@@ -96,4 +101,23 @@ body{
 #map { 
     height: 400px;
     width: 80vh;
+}
+
+@media screen and (max-width:766px){
+    #map{
+        width:30vh;
+    }
+}
+
+
+@media screen and (max-width:766px){
+    .options{
+        margin-top: 10rem;
+      }
+      .explore{
+        margin-top: 1.5rem;
+      }
+      .Bar{
+        position: static;
+      }
 }

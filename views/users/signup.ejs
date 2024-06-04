@@ -1,30 +1,48 @@
 <% layout("/layouts/boiler") %>
-<div class="row mt-3">
-    <h1 class="offset-3 col-6">SignUp on WanderLust</h1>
-    <div class="col-6 offset-3">
-<form method="post" action="/signup" novalidate class="needs-validation">
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" name="username" class="form-control" id="username" required>
-        <div class="invalid-feedback">Please enter title</div>
-    </div>
 
-    <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" name="email" class="form-control" id="email" required>
-        <div class="invalid-feedback">Please enter email</div>
-    </div>
+<style>
+@media screen and (max-width:767px){
+    .up{
+      margin-top: 12rem;
+    }
+    .explore{
+      margin-top: 1.5rem;
+    }
+    .Bar{
+      position: static;
+    }
+  }
+</style>
 
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" name="password" class="form-control" id="password" required>
-        <div class="invalid-feedback">Please enter password</div>
-    </div>
-
-    <button class="btn btn-success">SignUp</button>
-</form>
-    </div>
-    </div>
+<div class="up">
+    <div class="row mt-3">
+        <h1 class="offset-3 col-6">SignUp on WanderLust</h1>
+        <div class="col-6 offset-3">
+    <form method="post" action="/signup" novalidate class="needs-validation">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="username" required>
+            <div class="invalid-feedback">Please enter title</div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Please enter email</div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+            <div class="invalid-feedback">Please enter password</div>
+        </div>
+    
+        <button class="btn btn-success">SignUp</button>
+    </form>
+        </div>
+        </div>
+    
+</div>
 
     
     
